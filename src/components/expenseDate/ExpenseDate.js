@@ -3,8 +3,9 @@ import styled from "styled-components";
 const DataStyled = styled.div`
   display: flex;
   flex-direction: column;
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 5.6rem;
+  height: 5.6rem;
+  margin: 10px;
   border: 1px solid #ececec;
   background-color: #2a2a2a;
   color: white;

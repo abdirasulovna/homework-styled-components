@@ -13,42 +13,38 @@ const CardStyled = styled.div`
 `;
 const StyledDescription = styled.div`
   display: flex;
-  flex-direction: column;
   gap: 1rem;
-  align-items: flex-end;
-  flex-flow: column-reverse;
-  justify-content: flex-start;
+  align-items: center;
   flex: 1;
   color: #fff;
   margin-left: 20px;
 `;
-const H2 = styled.h2`
+const TextStyled = styled.h2`
   color: #3a3a3a;
   font-size: 1rem;
   flex: 1;
-  margin: 0 1rem;
   color: white;
 `;
 const Price = styled.div`
-  font-size: 1rem;
   font-weight: bold;
   color: white;
   background-color: #40005d;
   border: 1px solid white;
-  padding: 0.5rem;
+  font-size: 1.25rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 12px;
 `;
 function ExpenseItem(props) {
   return (
     <CardStyled>
       <Card>
+         <StyledDescription>
         <ExpenseDate date={props.expenseDate} />
-        <StyledDescription>
-          <H2>{props.expenseTitle}</H2>
+          <TextStyled>{props.expenseTitle}</TextStyled>
           <Price>${props.expensePrice}</Price>
         </StyledDescription>
       </Card>
-    </CardStyled>
+     </CardStyled>
   );
 }
 
